@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 apply plugin: 'org.spongepowered.mixin'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
-version = "1.0-1.12.2"
+version = "1.0.6-1.12.2"
 group = 'tfar' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "${modid}"
 
@@ -78,11 +78,11 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    compile 'org.spongepowered:mixin:0.8.2'
+    compile 'org.spongepowered:mixin:0.8.1-SNAPSHOT'
 }
 
 mixin {
-    add sourceSets.main, 'examplemod.refmap.json'
+    add sourceSets.main, 'mixins.noblockgravity.refmap.json'
 }
 
 processResources {

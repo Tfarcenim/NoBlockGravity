@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "package": "tfar.noblockgravity.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mixins.noblockgravity.refmap.json",
+  "mixins": [
+    "BlockBushMixin",
+    "BlockCropsMixin",
+    "BlockFallingMixin",
+    "BlockLadderMixin",
+    "BlockMushroomMixin",
+    "BlockTallMixin",
+    "BlockTorchMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
